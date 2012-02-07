@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  add_to_portal_report: 1
+  submit_to_tsavo: 1
+  adwords_account_id: MyString
+  fetch_report_from_google: 1
+
+two:
+  add_to_portal_report: 1
+  submit_to_tsavo: 1
+  adwords_account_id: MyString
+  fetch_report_from_google: 1

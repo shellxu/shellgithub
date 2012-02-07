@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Add to portal report:</b>
+  <%= @google_adwords_account.add_to_portal_report %>
+</p>
+
+<p>
+  <b>Submit to tsavo:</b>
+  <%= @google_adwords_account.submit_to_tsavo %>
+</p>
+
+<p>
+  <b>Adwords account:</b>
+  <%= @google_adwords_account.adwords_account_id %>
+</p>
+
+<p>
+  <b>Fetch report from google:</b>
+  <%= @google_adwords_account.fetch_report_from_google %>
+</p>
+
+
+<%= link_to 'Edit', edit_google_adwords_account_path(@google_adwords_account) %> |
+<%= link_to 'Back', google_adwords_accounts_path %>

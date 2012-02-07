@@ -1,0 +1,2 @@
+module GoogleMccAccountsHelper
+end

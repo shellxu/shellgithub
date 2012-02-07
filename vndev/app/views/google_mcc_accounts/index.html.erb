@@ -1,0 +1,31 @@
+<h1>Listing google_mcc_accounts</h1>
+
+<table>
+  <tr>
+    <th>Email</th>
+    <th>Password</th>
+    <th>User agent</th>
+    <th>Application token</th>
+    <th>Developer token</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @google_mcc_accounts.each do |google_mcc_account| %>
+  <tr>
+    <td><%= google_mcc_account.email %></td>
+    <td><%= google_mcc_account.password %></td>
+    <td><%= google_mcc_account.user_agent %></td>
+    <td><%= google_mcc_account.application_token %></td>
+    <td><%= google_mcc_account.developer_token %></td>
+    <td><%= link_to 'Show', google_mcc_account %></td>
+    <td><%= link_to 'Edit', edit_google_mcc_account_path(google_mcc_account) %></td>
+    <td><%= link_to 'Destroy', google_mcc_account, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Google mcc account', new_google_mcc_account_path %>

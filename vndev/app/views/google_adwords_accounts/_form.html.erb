@@ -1,0 +1,33 @@
+<%= form_for(@google_adwords_account) do |f| %>
+  <% if @google_adwords_account.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@google_adwords_account.errors.count, "error") %> prohibited this google_adwords_account from being saved:</h2>
+
+      <ul>
+      <% @google_adwords_account.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :add_to_portal_report %><br />
+    <%= f.number_field :add_to_portal_report %>
+  </div>
+  <div class="field">
+    <%= f.label :submit_to_tsavo %><br />
+    <%= f.number_field :submit_to_tsavo %>
+  </div>
+  <div class="field">
+    <%= f.label :adwords_account_id %><br />
+    <%= f.text_field :adwords_account_id %>
+  </div>
+  <div class="field">
+    <%= f.label :fetch_report_from_google %><br />
+    <%= f.number_field :fetch_report_from_google %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

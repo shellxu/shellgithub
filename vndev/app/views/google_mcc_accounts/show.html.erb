@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Email:</b>
+  <%= @google_mcc_account.email %>
+</p>
+
+<p>
+  <b>Password:</b>
+  <%= @google_mcc_account.password %>
+</p>
+
+<p>
+  <b>User agent:</b>
+  <%= @google_mcc_account.user_agent %>
+</p>
+
+<p>
+  <b>Application token:</b>
+  <%= @google_mcc_account.application_token %>
+</p>
+
+<p>
+  <b>Developer token:</b>
+  <%= @google_mcc_account.developer_token %>
+</p>
+
+
+<%= link_to 'Edit', edit_google_mcc_account_path(@google_mcc_account) %> |
+<%= link_to 'Back', google_mcc_accounts_path %>

@@ -1,0 +1,29 @@
+<h1>Listing google_adwords_accounts</h1>
+
+<table>
+  <tr>
+    <th>Add to portal report</th>
+    <th>Submit to tsavo</th>
+    <th>Adwords account</th>
+    <th>Fetch report from google</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @google_adwords_accounts.each do |google_adwords_account| %>
+  <tr>
+    <td><%= google_adwords_account.add_to_portal_report %></td>
+    <td><%= google_adwords_account.submit_to_tsavo %></td>
+    <td><%= google_adwords_account.adwords_account_id %></td>
+    <td><%= google_adwords_account.fetch_report_from_google %></td>
+    <td><%= link_to 'Show', google_adwords_account %></td>
+    <td><%= link_to 'Edit', edit_google_adwords_account_path(google_adwords_account) %></td>
+    <td><%= link_to 'Destroy', google_adwords_account, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Google adwords account', new_google_adwords_account_path %>
